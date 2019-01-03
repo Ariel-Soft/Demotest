@@ -1,4 +1,4 @@
 export const ApiConfig = {
-    "baseURL": "http://localhost:49498/",
+    "baseURL": "http://localhost:49498/"
  }
  

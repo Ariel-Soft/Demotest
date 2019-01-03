@@ -7,19 +7,17 @@ import { AuthInterceptor } from './auth/services/authInterceptor';
 
 import {AuthModule} from '../app/auth/auth.module';
 import { AuthGuard } from '../app/auth/services/auth.guard';
-// import { AuthService } from './auth/services/auth.service';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import {DashboardComponent} from './Views/dashboard/dashboard.component';
-import {OrderFormComponent} from './Views/orderform/orderform.component';
+
+import {DashboardService} from './services/dashboard.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent,
-    OrderFormComponent
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +25,7 @@ import {OrderFormComponent} from './Views/orderform/orderform.component';
     AuthModule,
     AppRoutingModule,HttpClientModule
   ],
-  providers: [AuthGuard,{provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true}],
+  providers: [AuthGuard,DashboardService,{provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

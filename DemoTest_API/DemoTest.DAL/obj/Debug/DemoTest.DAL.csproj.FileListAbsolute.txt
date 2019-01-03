@@ -1,0 +1,10 @@
+D:\Official\DemoTest_Angular\sourcecode\DemoTest_API\DemoTest.API\DemoTest.DAL\bin\Debug\DemoTest.DAL.dll.config
+D:\Official\DemoTest_Angular\sourcecode\DemoTest_API\DemoTest.API\DemoTest.DAL\bin\Debug\DemoTest.DAL.dll
+D:\Official\DemoTest_Angular\sourcecode\DemoTest_API\DemoTest.API\DemoTest.DAL\bin\Debug\DemoTest.DAL.pdb
+D:\Official\DemoTest_Angular\sourcecode\DemoTest_API\DemoTest.API\DemoTest.DAL\bin\Debug\EntityFramework.dll
+D:\Official\DemoTest_Angular\sourcecode\DemoTest_API\DemoTest.API\DemoTest.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Official\DemoTest_Angular\sourcecode\DemoTest_API\DemoTest.API\DemoTest.DAL\bin\Debug\EntityFramework.xml
+D:\Official\DemoTest_Angular\sourcecode\DemoTest_API\DemoTest.API\DemoTest.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Official\DemoTest_Angular\sourcecode\DemoTest_API\DemoTest.API\DemoTest.DAL\obj\Debug\DemoTest.DAL.csprojResolveAssemblyReference.cache
+D:\Official\DemoTest_Angular\sourcecode\DemoTest_API\DemoTest.API\DemoTest.DAL\obj\Debug\DemoTest.DAL.dll
+D:\Official\DemoTest_Angular\sourcecode\DemoTest_API\DemoTest.API\DemoTest.DAL\obj\Debug\DemoTest.DAL.pdb

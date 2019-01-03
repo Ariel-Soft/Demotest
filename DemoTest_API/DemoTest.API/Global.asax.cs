@@ -1,5 +1,8 @@
-﻿using System;
+﻿using DemoTest.API.Models;
+using DemoTest.DAL;
+using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
@@ -18,6 +21,7 @@ namespace DemoTest.API
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            Database.SetInitializer<ApplicationDbContext>(null);
         }
         protected void Application_BeginRequest(object sender, EventArgs e)
         {

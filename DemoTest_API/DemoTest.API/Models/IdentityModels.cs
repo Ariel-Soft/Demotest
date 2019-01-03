@@ -16,6 +16,9 @@ namespace DemoTest.API.Models
             // Add custom user claims here
             return userIdentity;
         }
+
+        public string PhoneNumber { get; set; }
+        public string Address { get; set; }
     }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>

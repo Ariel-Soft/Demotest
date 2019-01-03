@@ -330,7 +330,7 @@ namespace DemoTest.API.Controllers
                     return BadRequest(ModelState);
                 }
 
-                var user = new ApplicationUser() { UserName = model.Email, Email = model.Email };
+                var user = new ApplicationUser() { UserName = model.Email, Email = model.Email ,PhoneNumber=model.PhoneNumber,Address=model.Address};
 
                 IdentityResult result = await UserManager.CreateAsync(user, model.Password);
 
@@ -339,7 +339,7 @@ namespace DemoTest.API.Controllers
                     return GetErrorResult(result);
                 }
 
-                return Ok();
+                return Ok(result);
             }
             catch (Exception ex)
             {

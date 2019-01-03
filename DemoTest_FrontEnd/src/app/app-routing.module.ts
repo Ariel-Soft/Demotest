@@ -4,11 +4,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { AuthGuard } from '../app/auth/services/auth.guard';
 
 import {DashboardComponent} from './Views/dashboard/dashboard.component';
-import {OrderFormComponent} from './Views/orderform/orderform.component';
+
 
 const routes: Routes = [
-
-
   {
     path: '',
     redirectTo: 'auth',
@@ -20,7 +18,7 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        loadChildren: 'app/auth/auth.module#AuthModule'
+        loadChildren: '../app/auth/auth.module#AuthModule'
      
       }
     ]
@@ -29,14 +27,7 @@ const routes: Routes = [
     path: 'dashboard',
     component: DashboardComponent,
      canActivateChild: [AuthGuard],
-  },
-  {
-    path :'orderform',
-    component:OrderFormComponent,
-    canActivateChild: [AuthGuard],
   }
-  
- 
 ];
 
 @NgModule({

@@ -1,1 +1,23 @@
-<h1>Welcome on dashboard</h1>
+<div>
+    <label>Select Vendor: </label>
+    <select (change)="getProductbyVendorId($event.target.value)">
+        <option value="0">--Select Vendor--</option>
+        <option *ngFor="let vendor of vendorList" value={{vendor.Id}}>
+            {{vendor.FirtName}}
+        </option>
+    </select>
+</div>
+
+<div class="row">
+<div *ngFor="let product of productList">
+<div col-md-6>
+    <img [src]="product.Image">
+</div>
+<div col-md-6>
+    <p>Product Name : {{product.Name}}</p>
+    <p>Product Price : {{product.Price}}</p>
+    <p>Product Description :{{product.Description}}</p>
+</div>
+
+</div>
+</div>

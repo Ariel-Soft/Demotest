@@ -234,7 +234,9 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Controllers\VendorController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -336,6 +338,16 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DemoTest.DAL\DemoTest.DAL.csproj">
+      <Project>{fad4a8ed-ff6f-4334-975a-fe8ba89e4f65}</Project>
+      <Name>DemoTest.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DemoTest.Repository\DemoTest.Repository.csproj">
+      <Project>{28838bad-2b16-4616-b336-55e9aa92c71f}</Project>
+      <Name>DemoTest.Repository</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,1 +1,47 @@
-<h1>Welcome on registration</h1>
+
+<div class="login-form">
+    <div class="main-div">
+        <div class="panel">
+            <h2> Registration Form</h2>
+            <p>Please fill the form</p>
+        </div>
+        <form #f="ngForm" (ngSubmit)="register(registerFormModel)" novalidate>
+
+            <div class="form-group">
+                <input class="form-control f w-input" name="email" type="email" pattern="^[a-zA-Z0-9-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" [(ngModel)]="registerFormModel.email"
+                      placeholder="E-mail " #email="ngModel" required email />
+
+            </div>
+
+            <div class="form-group">
+                <!-- <input type="password" class="form-control" id="inputPassword" placeholder="Password"> -->
+
+                <input class="form-control f w-input" name="password" type="password" #password="ngModel" [(ngModel)]="registerFormModel.password" pattern="^[a-zA-Z0-9]{6,12}$"
+                placeholder="Password" required >
+
+            </div>
+            <div class="form-group">
+                <!-- <input type="password" class="form-control" id="inputPassword" placeholder="Password"> -->
+
+                <input class="form-control f w-input" name="confirmPassword" type="password" #confirmPassword="ngModel" [(ngModel)]="registerFormModel.confirmPassword" pattern="^[a-zA-Z0-9]{6,12}$"
+                placeholder="ConfirmPassword" required >
+
+            </div>
+
+            <div class="form-group">
+                <input class="form-control f w-input" name="phoneNumber" [(ngModel)]="registerFormModel.phoneNumber"
+                      placeholder="PhoneNumber" #phoneNumber="ngModel" required  />
+
+            </div>
+            <div class="form-group">
+                <input class="form-control f w-input" name="address" [(ngModel)]="registerFormModel.address"
+                      placeholder="Address" #address="ngModel" required  />
+
+            </div>
+
+            <button type="submit" class="btn btn-primary">SignUp</button>
+
+        </form>
+    </div>
+   
+</div>
